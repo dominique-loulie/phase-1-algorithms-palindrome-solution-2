@@ -1,6 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write your algorithm here => Looping through a string halfway can be done using the 'for' loop. 
+
+  for (let startIndex = 0; startIndex < word.length / 2; startIndex++) {
+    const endIndex = word.length - 1 - startIndex;
+
+  //The comparison of a first letter with the last letter
+
+    if (word[startIndex] !== word[endIndex]) {
+      return false;
+    }
+  }
+  
+    return true;
 }
+
 
 /* 
   Add your pseudocode here
